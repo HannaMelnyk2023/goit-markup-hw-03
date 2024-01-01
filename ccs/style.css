@@ -41,7 +41,7 @@ p {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* background-color: rgb(0, 255, 17); */
+  background-color: rgb(0, 255, 17);
 }
 
 .section {
@@ -186,6 +186,7 @@ p {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .feature-disc {
@@ -291,10 +292,9 @@ p {
 }
 
 .portfolio-item {
-  width: calc((100%-30px * 2) / 3);
-
   margin-right: 30px;
   margin-bottom: 30px;
+  flex-basis: calc((100%-30px * 2) / 3);
 }
 
 .portfolio-item:nth-child(3n) {
@@ -307,6 +307,10 @@ p {
 .portfolio-link {
   text-decoration: none;
 }
+.border {
+  border: 1px solid #eeeeee;
+  border-top: 0;
+}
 
 .portfolio-title {
   color: var(--second-color);
@@ -314,6 +318,10 @@ p {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-right: 24px;
+  margin-left: 24px;
 }
 
 .portfolio-disc {
@@ -321,6 +329,10 @@ p {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-right: 24px;
+  margin-left: 24px;
 }
 
 /* Футер */
