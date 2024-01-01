@@ -58,6 +58,8 @@ p {
   display: flex;
 }
 .header-logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
   text-decoration: none;
   color: var(--logo-blackcolor);
   font-family: "Raleway", sans-serif;
@@ -120,6 +122,8 @@ p {
   color: var(--logo-whitecolor);
   background-color: var(--black-background);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -153,6 +157,7 @@ p {
   letter-spacing: 0.06em;
   text-align: center;
 }
+
 /*  Особливості */
 .feature {
   display: flex;
@@ -199,6 +204,7 @@ p {
 .section.team {
   background-color: var(--second-white-background);
 }
+
 .team {
   display: flex;
 }
@@ -209,6 +215,7 @@ p {
   margin-right: 30px;
 }
 .team-item-title {
+  margin-top: 30px;
   color: var(--second-color);
   font-size: 16px;
   font-weight: 500;
@@ -217,12 +224,18 @@ p {
   text-align: center;
 }
 .team-item-disc {
+  margin-top: 10px;
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.03em;
   text-align: center;
 }
 /* Сторинка Портфоліо */
+.filter {
+  display: flex;
+}
+
 .button {
   background-color: var(--second-white-background);
   color: var(--second-color);
@@ -260,7 +273,7 @@ p {
 /* Футер */
 .footer {
   padding-top: 60px;
-  padding-right: 60px;
+  padding-bottom: 60px;
   background-color: var(--black-background);
   font-size: 14px;
   line-height: 1.7;
@@ -278,6 +291,7 @@ p {
 .footer-all {
   margin-top: 20px;
 }
+
 .footer-address {
   text-decoration: none;
   color: var(--logo-whitecolor);
@@ -285,6 +299,7 @@ p {
 }
 
 .footer-link {
+  margin-top: 9px;
   color: var(--footer-link-color);
   text-decoration: none;
   font-style: normal;
