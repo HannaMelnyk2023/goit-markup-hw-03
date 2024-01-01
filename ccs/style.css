@@ -20,6 +20,7 @@ body {
 .list {
   list-style-type: none;
 }
+
 h1,
 h2,
 h3,
@@ -40,8 +41,9 @@ p {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: rgb(0, 255, 17);
+  /* background-color: rgb(0, 255, 17); */
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -53,10 +55,13 @@ p {
 .main-header {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
+
 .header {
   display: flex;
 }
+
 .header-logo {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -68,6 +73,7 @@ p {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
+
 /*  частина лого WEB */
 .logo {
   color: var(--accent-color);
@@ -76,12 +82,15 @@ p {
 .site-nav {
   margin-left: 93px;
 }
+
 .header-nav {
   display: flex;
 }
+
 .header-nav-item:not(:last-child) {
   margin-right: 50px;
 }
+
 .header-nav-link {
   display: block;
   padding-top: 32px;
@@ -95,16 +104,20 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+
 .header-nav-link.current {
   color: var(--accent-color);
 }
+
 .header-address {
   display: flex;
   margin-left: auto;
 }
+
 .header-address-item:not(:last-child) {
   margin-right: 50px;
 }
+
 .header-address-link {
   color: var(--prime-color);
 
@@ -174,11 +187,13 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
+
 .feature-disc {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+
 .title-second {
   margin-bottom: 50px;
 
@@ -189,13 +204,16 @@ p {
   letter-spacing: 0.03em;
   text-align: center;
 }
+
 /* Чим ми займаємось */
 .directions {
   display: flex;
 }
+
 .directions-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .directions-item {
   display: block;
 }
@@ -208,12 +226,15 @@ p {
 .team {
   display: flex;
 }
+
 .team-item {
   background-color: var(--prime-white-background);
 }
+
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .team-item-title {
   margin-top: 30px;
   color: var(--second-color);
@@ -223,6 +244,7 @@ p {
   letter-spacing: 0.03em;
   text-align: center;
 }
+
 .team-item-disc {
   margin-top: 10px;
   margin-bottom: 30px;
@@ -231,9 +253,15 @@ p {
   letter-spacing: 0.03em;
   text-align: center;
 }
+
 /* Сторинка Портфоліо */
 .filter {
   display: flex;
+  justify-content: center;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .button {
@@ -247,6 +275,7 @@ p {
 
   border-radius: 4px;
   border: 1px solid transparent;
+  height: 38px;
 }
 
 .button:hover,
@@ -254,9 +283,31 @@ p {
   background-color: var(--accent-background);
   color: var(--logo-whitecolor);
 }
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.portfolio-item {
+  width: calc((100%-30px * 2) / 3);
+
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0px;
+}
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
 .portfolio-link {
   text-decoration: none;
 }
+
 .portfolio-title {
   color: var(--second-color);
   font-size: 18px;
@@ -264,12 +315,14 @@ p {
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
 .portfolio-disc {
   color: var(--prime-color);
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.03em;
 }
+
 /* Футер */
 .footer {
   padding-top: 60px;
@@ -279,6 +332,7 @@ p {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+
 .footer-logo {
   /* margin-bottom: 20px; */
   text-decoration: none;
@@ -288,6 +342,7 @@ p {
   font-weight: 700;
   line-height: 1.2;
 }
+
 .footer-all {
   margin-top: 20px;
 }
@@ -304,6 +359,7 @@ p {
   text-decoration: none;
   font-style: normal;
 }
+
 .footer-link:hover,
 .footer-link:focus,
 .footer-address:hover,
