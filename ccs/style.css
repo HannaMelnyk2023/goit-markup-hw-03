@@ -10,15 +10,18 @@
   --black-background: #2f303a;
   --accent-background: #2196f3;
 }
+.list {
+  list-style-type: none;
+}
 
 body {
   background-color: var(--prime-white-background);
   color: var(--prime-color);
   font-family: "Roboto", sans-serif;
 }
-
-.list {
-  list-style-type: none;
+header {
+  /* display: flex; */
+  border-bottom: 1px solid #ececec;
 }
 
 h1,
@@ -36,30 +39,28 @@ p {
   margin-right: 0;
   padding: 0;
 }
-
+img {
+  display: block;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
   /* background-color: rgb(0, 255, 17); */
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-
   /* outline: 2px solid #2196f3; */
 }
 
 /* Хедер */
 .main-header {
   display: flex;
+  justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #ececec;
-}
-
-.header {
-  display: flex;
 }
 
 .header-logo {
@@ -130,7 +131,7 @@ p {
 
 /* Головна сторинка */
 /* Герой */
-/* .section */
+
 .hero {
   color: var(--logo-whitecolor);
   background-color: var(--black-background);
@@ -140,7 +141,6 @@ p {
 }
 
 .hero-title {
-  display: block;
   max-width: 696px;
   margin-right: auto;
   margin-left: auto;
@@ -172,6 +172,9 @@ p {
 }
 
 /*  Особливості */
+.section.feature {
+  padding-bottom: 0;
+}
 .feature {
   display: flex;
 }
@@ -181,15 +184,16 @@ p {
 }
 
 .feature-title {
+  margin-bottom: 10px;
   color: var(--second-color);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
 }
 
 .feature-disc {
+  width: 270px;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -237,7 +241,6 @@ p {
 }
 
 .team-item-title {
-  margin-top: 30px;
   color: var(--second-color);
   font-size: 16px;
   font-weight: 500;
@@ -248,11 +251,14 @@ p {
 
 .team-item-disc {
   margin-top: 10px;
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.03em;
   text-align: center;
+}
+.team-text-wrap {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* Сторинка Портфоліо */
@@ -266,6 +272,13 @@ p {
 }
 
 .button {
+  padding-left: 22px;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+
   background-color: var(--second-white-background);
   color: var(--second-color);
   cursor: pointer;
@@ -273,10 +286,6 @@ p {
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.03em;
-
-  border-radius: 4px;
-  border: 1px solid transparent;
-  height: 38px;
 }
 
 .button:hover,
@@ -288,13 +297,14 @@ p {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .portfolio-item {
   margin-right: 30px;
   margin-bottom: 30px;
-  flex-basis: calc((100%-30px * 2) / 3);
+  width: 370px;
+  /* flex-basis: calc((100%-30px * 2) / 3); */
 }
 
 .portfolio-item:nth-child(3n) {
@@ -318,21 +328,15 @@ p {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
-  /* margin-top: 20px;
-  margin-bottom: 0;
-  margin-right: 24px;
-  margin-left: 24px; */
 }
 
 .portfolio-disc {
+  margin-top: 4px;
+
   color: var(--prime-color);
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.03em;
-  /* margin-top: 0px;
-  margin-bottom: 20px;
-  margin-right: 24px;
-  margin-left: 24px; */
 }
 .portfolio-text-wrap {
   padding: 20px 24px;
@@ -350,7 +354,7 @@ p {
 }
 
 .footer-logo {
-  /* margin-bottom: 20px; */
+  margin-bottom: 20px;
   text-decoration: none;
   color: var(--logo-whitecolor);
   font-family: "Raleway", sans-serif;
@@ -359,17 +363,17 @@ p {
   line-height: 1.2;
 }
 
-.footer-all {
-  margin-top: 20px;
-}
-
 .footer-address {
+  display: block;
+  margin-top: 20px;
+
   text-decoration: none;
   color: var(--logo-whitecolor);
   font-style: normal;
 }
 
 .footer-link {
+  display: block;
   margin-top: 9px;
   color: var(--footer-link-color);
   text-decoration: none;
@@ -382,8 +386,8 @@ p {
 .footer-address:focus,
 .header-nav-link:hover,
 .header-nav-link:focus,
-.header-address:hover,
-.header-address:focus {
+.header-address-link:hover,
+.hheader-address-link:focus {
   color: var(--accent-color);
 }
 
