@@ -247,7 +247,7 @@ img {
   color: var(--second-color);
   font-size: 16px;
   font-weight: 500;
-  line-height: 2;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
 }
@@ -255,7 +255,7 @@ img {
 .team-item-disc {
   margin-top: 10px;
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
 }
